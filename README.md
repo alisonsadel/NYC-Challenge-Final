@@ -191,7 +191,7 @@ df = df.rename(columns={0: 'health_level_dead', 1: 'health_level_fair', 2: 'heal
 ### NYC Subway Stations Dataset
 
 * Use``pd.get_dummies`` to generate binary values for whether the subway station is ADA-Accessiblle - Yes, No, Partially
-* Ultimately, all datasets needed to share zipcode as a common column to later perform a groupby function. The dataset provide latitude and longitude values  however there was no zipcode field. The Geopy library was used to create an API to find all location descriptor, using the latitude longitude pairs.
+* Ultimately, all datasets needed to share zipcode as a common column to later perform a groupby function. The dataset provided latitude and longitude values  however there was no zipcode field. The Geopy library was used to create an API to find all location descriptors, using the latitude longitude pairs.
   * Step 1: Establish a connection to APIs by setting up the geocoder. First import the geocoder you want to use, and initiate it.
   * Step 2: Use Rate limiter to add some delays in between the API requests.
   * Step 3: Create a function to retrieve information using the coordinates --> Output returns a dictionary
