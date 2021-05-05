@@ -4,7 +4,7 @@ Group Members: Stephen Brescher, Shadee Tabassi, Alison Sadel, Manny Mejia
 <img align= "center" src="NYC.gif" width="1000" height="500"/> 
 
 
-# OVERVIEW
+# Overview
 * The datasets created and utilized for our analysis and visualizations took data on New York City (crime, public school rankings, tree health, proximity to and status of brownfield clean-up sites, socio-economic indicators like subway access for the disabled, subway proximity and walkability and the percentage of students qualifying for subsidized school meals, filtered by zipcode. After initial exploratory analysis and cleaning, we decided to move foward with a Linear Regression and Random Forest Machine Learning Models.
 
 * Technologies Used: 
@@ -79,7 +79,7 @@ print('R-squared scores:', round(r2, 3))
 The Random Forest Regression was passed 48 features for our X (independent) variable such as bed/bath count and days on the market and the Sold Price for our y (dependent) variable. We felt that the number of features were appropriate given the size of the original datasets were larger. The n value we choose for the forest was 50 with a random state of 101 to which provided us with enough trees and shuffling to predict a high R2 score of ~84%.
 
 
-# TRANSFORM
+# Transform
 ### General clean up
   * ``str.lower()`` to convert all strings to lowercase
   * Rename columns to eliminate spaces and capitalization
