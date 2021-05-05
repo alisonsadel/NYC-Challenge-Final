@@ -11,6 +11,13 @@ Group Members: Stephen Brescher, Shadee Tabassi, Alison Sadel, Manny Mejia
   * Back End: Flask, PostgreSQL, Python, Pandas, sqlalchemy [create_engine], numpy, os, dotenv[load_dotenv], sklearn.preprocessing [oneHotEncoder], scipy.stats, geopy[distance], geopy.geocoders[Nominatim], geopy.exc[GeoCoderTimedOut], geopy.extra.rate_limiter[RateLimiter], geopandas, plotly_express, tqdm, tqdm.pandas(), sklearn.neighbors, tqd, datetime, tqdm_notebook, sklearn[import tree], sklearn.model_selection [train_test_split], sklearn.impute [SimpleImputer], sklearn.ensemble [RandomForestClassifier]
   * Front End: Javascript, Leaflet, HTML, CSS, Bootstrap 
 
+# Sources
+NYC Street Tree Data
+NYC Crimes Data
+NYC Brownfields Data 
+NYC Real Estate Data 
+NYC Subway Data <a href="http://web.mta.info/developers/developer-data-terms.html#data" target="_top">Download Page</a>
+NYC School Rankings Data (Elementary, Middle, High)
 
 # Machine Learning - Random Forest Regression
 
