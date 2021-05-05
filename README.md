@@ -12,7 +12,6 @@ Group Members: Stephen Brescher, Shadee Tabassi, Alison Sadel, Manny Mejia
   * Front End: Javascript, Leaflet, HTML, CSS, Bootstrap 
 
 # Sources
-NYC Street Tree Data
 * <a href="https://www.kaggle.com/nycparks/tree-census?select=new_york_tree_census_2015.csv" target="_top"> NYC Tree Health Census - Kaggle </a>
 * <a href="https://catalog.data.gov/dataset?tags=nypd" target="_top"> NYC Crime Data - Data.gov </a>
 * <a href="https://gis.ny.gov/gisdata/inventories/details.cfm?DSID=1097" target="_top"> NYC Brownfields Cleanup Data - NYC GIS </a>
