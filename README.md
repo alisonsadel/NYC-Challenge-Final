@@ -192,6 +192,10 @@ df = df.rename(columns={0: 'health_level_dead', 1: 'health_level_fair', 2: 'heal
 
 * Use``pd.get_dummies`` to generate binary values for whether the subway station is ADA-Accessiblle - Yes, No, Partially
 * Ultimately, all datasets needed to share zipcode as a common column to later perform a groupby function. The dataset provide latitude and longitude values  however there was no zipcode field. The Geopy library was used to create an API to find all location descriptor, using the latitude longitude pairs.
+  * Step 1: Establish a connection to APIs by setting up the geocoder. First import the geocoder you want to use, and initiate it.
+  * Step 2: Use Rate limiter to add some delays in between the API requests.
+  * Step 3: Create a function to retrieve information using the coordinates --> Output returns a dictionary
+  * Step 4: Use ``.apply()`` with function to isolate only zipcode
 
 ```
 # Import Libaries
@@ -216,7 +220,7 @@ df['zipcode'] = df['location'].apply(parse_zipcode)
 
 ### NYC Real Estate Dataset
 
-* To generate binary values for the bins created to represent ranges for days on market, OneHotEncoder cannot process string values directly without mapping them as integers so for to create the days on market feature, use``pd.get_dummies``. By default, pandas.get_dummies only converts string columns into one-hot representation, unless columns are specified.
+* To generate binary values for the bins created to represent ranges for days on market, OneHotEncoder cannot process string values directly without mapping them as integers so for the days on market feature, use``pd.get_dummies``. By default, pandas.get_dummies only converts string columns into one-hot representation, unless columns are specified.
 
 * Based on our selection to use a Random Forest Regression, we knew we would ultimately need one comprehensive dataframe filled with x features (inputs) used to train the model. The front end was designed to have an input option for the count of bedrooms and bathrooms and the Y output would be an estimated price. That not only informed our decision to focus our preprocessing on those columns but also use this dataset as the starting point for the future merge of all binary encoded values.
 
