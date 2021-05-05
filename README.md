@@ -41,11 +41,10 @@ At its foundation Random Forest is a collection of if/or conditionals that can b
 </section>
 
 # Random Forest Regression Model
-
-*  Prework:
- *  Merge all dataframes outlined above, only keeping the binary encoded values to use as features (x variables)
- *  Assign X values from the Real Estate Final table for the model & cast all as int 
- *  Assign Y value (dependent variable) from the Real Estate Final table for the model (y = sold_price)
+  ## Prework
+  *  Merge all dataframes outlined above, only keeping the binary encoded values to use as features (x variables)
+  *  Assign X values from the Real Estate Final table for the model & cast all as int 
+  *  Assign Y value (dependent variable) from the Real Estate Final table for the model (y = sold_price)
  
 ```
 # Run test and training of the data
