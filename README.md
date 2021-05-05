@@ -13,11 +13,12 @@ Group Members: Stephen Brescher, Shadee Tabassi, Alison Sadel, Manny Mejia
 
 # Sources
 NYC Street Tree Data
-NYC Crimes Data
-NYC Brownfields Data 
-NYC Real Estate Data 
-<a href="http://web.mta.info/developers/developer-data-terms.html#data" target="_top">NYC Subway Data - mta</a>
-NYC School Rankings Data (Elementary, Middle, High)
+* <a href="https://www.kaggle.com/nycparks/tree-census?select=new_york_tree_census_2015.csv" target="_top"> NYC Tree Health Census - Kaggle </a>
+* <a href="https://catalog.data.gov/dataset?tags=nypd" target="_top"> NYC Crime Data - Data.gov </a>
+* <a href="https://gis.ny.gov/gisdata/inventories/details.cfm?DSID=1097" target="_top"> NYC Brownfields Cleanup Data - NYC GIS </a>
+* <a href="https://www.compass.com/agents/" target="_top"> NYC Real Estate Sales 2020 - Compass </a>
+* <a href="http://web.mta.info/developers/developer-data-terms.html#data" target="_top"> NYC Subway Data - MTA </a>
+* <a href="https://www.schooldigger.com/go/NY/schoolrank.aspx" target="_top"> NYC School Rankings Data (Elementary, Middle, High School) - School Digger</a>
 
 # Machine Learning - Random Forest Regression
 
