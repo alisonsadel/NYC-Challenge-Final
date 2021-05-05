@@ -1,5 +1,5 @@
 # Machine Learning - Real Estate Valuations
-Group Members: Stephen Brescher, Shadee Tabassi, Alison Sadel, Manny Mejia
+Group Members: Stephen Brescher, Shadee Tabassi, Alison Sadel and Manny Mejia
 
 <img align= "center" src="NYC.gif" width="1000" height="500"/> 
 
