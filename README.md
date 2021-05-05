@@ -32,6 +32,41 @@ Random Forest can also be classified as an ensemble method because it uses multi
 At its foundation Random Forest is a collection of if/or conditionals that can be used to understand the important decision nodes and how they led to the final output (dependent variable). For each new input, each tree in the forest predicts a value for Y (output). The final value can be calculated by taking the average of all the values predicted by all the trees in forest.
 </section>
 
+# Random Forest Regression Model
+
+*  Prework:
+ *  Merge all dataframes outlined above, only keeping the binary encoded values to use as features (x variables)
+ *  Assign X values from the Real Estate Final table for the model & cast all as int 
+ *  Assign Y value (dependent variable) from the Real Estate Final table for the model (y = sold_price)
+ 
+```
+# Run test and training of the data
+X_train, X_test, y_train, y_test = train_test_split(X1, y1, random_state = 101)
+
+# Run the Random Forest Regression and then fit it to the x and y training data
+model = RandomForestRegressor(n_estimators = 2000, max_depth = 150, random_state = 101)
+
+# Use ``.ravel()'' method to convert dataframe to to 1 dimensional array to fit machine learning model
+model.fit(X_train, y_train.values.ravel())
+
+# Make a prediction 
+y1_pred = model.predict(X_test)
+
+# Enusre that y1_pred is not in scientific notation
+pd.set_option('display.float_format', lambda x: '%.3f' % x)
+
+result_regression = X_test
+result_regression['sold_price'] = y_test
+result_regression['y1_pred'] = y1_pred.tolist()
+result_regression.sample(5)
+
+# Score the y test data vs the predicted data
+r2 = r2_score(y_test, y1_pred)
+r2
+print('R-squared scores:', round(r2, 3))
+
+```
+
 ## Machine Learning Analysis & Results
 The Random Forest Regression was passed 48 features for our X (independent) variable such as bed/bath count and days on the market and the Sold Price for our y (dependent) variable. We felt that the number of features were appropriate given the size of the original datasets were larger. The n value we choose for the forest was 50 with a random state of 101 to which provided us with enough trees and shuffling to predict a high R2 score of ~84%.
 
@@ -291,39 +326,5 @@ housing.head()
 
 ```
 
-# Machine Learning - Random Forest Regression
-
-*  Merge all dataframes outlined above, only keeping the binary encoded values to use as features (x variables)
-*  Assign X values from the Real Estate Final table for the model & cast all as int 
-*  Assign Y value (dependent variable) from the Real Estate Final table for the model (y = sold_price)
-```
-# Run test and training of the data
-X_train, X_test, y_train, y_test = train_test_split(X1, y1, random_state = 101)
-
-# Run the Random Forest Regression and then fit it to the x and y training data
-model = RandomForestRegressor(n_estimators = 2000, max_depth = 150, random_state = 101)
-
-# Use ``.ravel()'' method to convert dataframe to to 1 dimensional array to fit machine learning model
-model.fit(X_train, y_train.values.ravel())
-
-
-# Make a prediction 
-y1_pred = model.predict(X_test)
-
-# Enusre that y1_pred is not in scientific notation
-pd.set_option('display.float_format', lambda x: '%.3f' % x)
-
-result_regression = X_test
-result_regression['sold_price'] = y_test
-result_regression['y1_pred'] = y1_pred.tolist()
-result_regression.sample(5)
-
-# Score the y test data vs the predicted data
-r2 = r2_score(y_test, y1_pred)
-r2
-print('R-squared scores:', round(r2, 3))
-
-R-SQUARED SCORES: .77
-```
 
 
