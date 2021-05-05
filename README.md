@@ -281,6 +281,11 @@ df["dom_ranges"] = pd.cut(df['days_on_market'], ranges, labels=bin_names)
 ```
 # Challenge: Find the closest train station to each housing record
 
+# Import dependencies
+import pandas as pd
+import numpy as np
+import sklearn.neighbors
+
 # Find the absolute value of each coordinate pair
 def dist(lat1, long1, lat2, long2):
     return np.abs((lat1-lat2)+(long1-long2))
