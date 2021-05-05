@@ -16,7 +16,7 @@ NYC Street Tree Data
 NYC Crimes Data
 NYC Brownfields Data 
 NYC Real Estate Data 
-NYC Subway Data <a href="http://web.mta.info/developers/developer-data-terms.html#data" target="_top">Download Page</a>
+<a href="http://web.mta.info/developers/developer-data-terms.html#data" target="_top">NYC Subway Data - mta</a>
 NYC School Rankings Data (Elementary, Middle, High)
 
 # Machine Learning - Random Forest Regression
